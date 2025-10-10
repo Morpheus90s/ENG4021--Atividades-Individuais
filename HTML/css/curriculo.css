@@ -1,0 +1,66 @@
+body {
+    background-color: #000000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+h1, h2, h3 {
+    color: yellow;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: blue;
+    padding: 10px;
+}
+
+.navegacao {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: yellow;
+}
+
+footer {
+    color: orange;
+    padding: 15px 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#sumario {
+    color: cyan;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#sumario p {
+    color: cyan;
+    margin-left: 0;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-left: 10px;
+    color: white;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #333;
+    color: yellow;
+}
