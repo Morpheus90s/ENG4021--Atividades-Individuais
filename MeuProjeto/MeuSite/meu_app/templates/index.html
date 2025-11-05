@@ -1,0 +1,54 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página (Parte 2)</title>
+    
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Página de Tarefa</h1>
+    
+        <h2>{{ nome_pagina }}</h2>
+    </header>
+
+    <main>
+        <h3>Meu Ranking de Filmes</h3>
+        
+      
+        <div class="ranking-container">
+            {% for item in ranking %}
+                <div class="ranking-item">
+                    
+        
+                    <img src="{{ item.img }}" alt="{{ item.titulo }}">
+                    
+                    <h4>{{ item.titulo }}</h4>
+
+
+                    <ul>
+                        {% for link in item.links %}
+                            <li>
+                                <a href="{{ link.url }}" target="_blank">{{ link.desc }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+        
+        <hr>
+
+        <h3>Exemplo de Imagem Local</h3>
+
+    </main>
+
+</body>
+</html>

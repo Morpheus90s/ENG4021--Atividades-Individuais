@@ -1,0 +1,86 @@
+/* CSS de exemplo para o Item 4 */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #007bff;
+}
+
+header h2 {
+    color: #555;
+    font-weight: 300;
+}
+
+h3 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.ranking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ranking-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.ranking-item:hover {
+    transform: translateY(-5px);
+}
+
+.ranking-item img {
+    width: 100%;
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    border-radius: 4px;
+}
+
+.ranking-item h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Estilos para a lista de links (Atividade Extra) */
+.ranking-item ul {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.ranking-item li {
+    margin-bottom: 5px;
+}
+
+.ranking-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.ranking-item a:hover {
+    text-decoration: underline;
+}

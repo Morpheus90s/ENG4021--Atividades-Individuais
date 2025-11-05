@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'MeuSite',  # ADICIONE ESTA LINHA
     'curriculo',
+    'meu_app',
 ]
 
 MIDDLEWARE = [
